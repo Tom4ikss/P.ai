@@ -3,7 +3,7 @@ import "./Block.scss"
 const TextBlock = (props) => {
     let className = "columns"
     if(props.mod) {
-        className += " cloumns_" + props.mod
+        className += " columns_" + props.mod
     }
     return (
         <div className={className}>
