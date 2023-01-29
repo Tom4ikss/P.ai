@@ -1,0 +1,72 @@
+
+@media only screen and (max-width: 800px) {
+  .container {
+    
+  }
+}
+
+@import "../font/font.scss";
+
+
+.menu {
+  display: flex;
+  &__item {
+    margin-right: 3rem;
+    &::marker {
+      content: "";
+    }
+  }
+}
+
+
+.main {
+    @extend %font;
+    height: 100vh;
+    text-align: center;
+    
+    &__logo {
+      top: 7vh;
+      left: 3vw;
+    }
+    &__menu {
+      margin-top: 3.5rem;
+    }
+    &__header {
+      flex-wrap: nowrap;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__text-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 6.3rem;
+      &-text {
+          font-weight: 400;
+          max-width:39vw;
+          &-title {
+              font-size: calc(25px + 30 * (100vw / 1280));
+              letter-spacing: 0.02em;
+              line-height: 1.3em;
+              &_purple {
+                  color: #7E5FFF;
+                  line-height: 1.5em;
+              }
+          
+          }
+          &-subtitle {
+            font-size: calc(5px + 17 * (100vw / 1310));
+            margin-top: 3rem;
+          }
+      }
+  }
+
+  &__footer {
+    margin-top: 6.3rem;
+  }
+}
+
+
+
+
+
