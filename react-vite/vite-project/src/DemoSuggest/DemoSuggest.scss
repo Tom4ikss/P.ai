@@ -1,0 +1,23 @@
+@import "../font/font.scss";
+
+.demo {
+    @extend %font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 32vh;
+    background-color: black;
+    &__text {
+        
+        font-size: calc(23px + 16 * (100vw / 1310));
+        color: white;
+    }
+    &__button {
+        border-radius: 0px;
+        width: 8%;
+        height: 18%;
+        font-size: calc(5px + 8 * (100vw / 1310));
+        border: none;
+    }
+}
